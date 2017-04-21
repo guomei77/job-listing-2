@@ -1,42 +1,66 @@
   <div class="jumbotron">
       <h1 class="title">寻找千里马</h1>
-      <p class="slogan">寻找千里马 是三家互联网公司HR支持发起的寻人网站
+      <p class="slogan">寻找千里马 是三家互联网公司HR支持发起的招聘网站
       <br>
-      我们希望藉由这个网站，能让大家找到且应征上高薪且优质的工作。
+      这是一个作品更是一个寻人广告。网站上发布的岗位都是真实，并附上联系方式！
       <br>
-       凭借自己的努力和天分也会变 Winner
+       除了参赛，我们更希望能找到那个你。
       </p>
-      <p class="lead"><a class="btn btn-lg btn-danger" href="/jobs">马上应征</a></p>
+      <p class="lead"><a class="btn btn-lg btn-danger" href="/jobs">马上查看</a></p>
   </div>
 
 
-  <section id="company">
-  <div class = "container-fluid">
-    <div class="row">
-      <div class="col-sm-4 ">
-        <div class="thumbnail">
-          <img src="http://fullstack-public.oss-cn-qingdao.aliyuncs.com/2017-04-15-Screenshot%20at%20Apr%2015%2021-43-31.png" alt="search" class = "img-thumbnail">
-          <div class="caption">
-            <h3>北京朝阳建外SOHO</h3>
-          </div>
-        </div>
+  <div id="company-intro" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#company-intro" data-slide-to="0" class="active"></li>
+    <li data-target="#company-intro" data-slide-to="1"></li>
+    <li data-target="#company-intro" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <a href="http://www.haomaiyi.com">
+      <%= link_to image_tag("haomaiyi.png", :alt => "Slide1"), {:class => "img-responsive", :alt => "Responsive image"} %>
+      </a>
+      <div class="carousel-caption">
+        123
       </div>
-      <div class="col-sm-4 ">
-        <div class="thumbnail">
-          <img src="http://fullstack-public.oss-cn-qingdao.aliyuncs.com/2017-04-15-Screenshot%20at%20Apr%2015%2021-43-48.png" alt="bid" class = "img-thumbnail">
-          <div class="caption">
-            <h3>info@18koffer.com</h3>
-          </div>
-        </div>
+    </div>
+
+    <div class="item">
+      <a href="https://www.hpe.com">
+      <%= link_to image_tag("hpe.png", :alt => "Slide2"), {:class => "img-responsive", :alt => "Responsive image"} %>
+      </a>
+      <div class="carousel-caption">
+        234
       </div>
-      <div class="col-sm-4 ">
-        <div class="thumbnail">
-          <img src="http://fullstack-public.oss-cn-qingdao.aliyuncs.com/2017-04-15-Screenshot%20at%20Apr%2015%2021-44-00.png" alt="heart" class = "img-thumbnail">
-          <div class="caption">
-            <h3>010-12344321</h3>
-          </div>
-        </div>
+    </div>
+    <div class="item">
+      <a href="http://www.dxc.technology">
+      <%= link_to image_tag("dxc.png", :alt => "Slide3"), {:class => "img-responsive", :alt => "Responsive image"} %>
+      </a>
+      <div class="carousel-caption">
+        456
       </div>
     </div>
   </div>
-</section>
+  <!-- Controls -->
+  <a class="left carousel-control" href="#company-intro" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#company-intro" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script>
+  $( document ).ready(function(){
+  $('#company-intro').carousel();
+  });
+</script>

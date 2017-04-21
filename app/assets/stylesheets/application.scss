@@ -21,10 +21,11 @@
 
 
  .jumbotron {
-   background-image:url('http://fullstack-public.oss-cn-qingdao.aliyuncs.com/2017-04-15-542213.png');
+   background-image:url('千里马黑1.jpg');
    background-repeat: no-repeat;
    background-size: cover;
    padding-bottom: 110px;
+   color: white;
  }
 
  .title {
@@ -32,6 +33,7 @@
    text-align: center;
    margin-top: 200px;
    margin-bottom: 80px;
+
  }
 
  .slogan {
@@ -47,30 +49,4 @@
    text-align: center;
    color: white;
  }
- // part 2 button
- .caption {
-  margin: 30px;
-  text-align: center;
-  top: 20px;
-}
-
-.thumbnail {
-    border: 0 none;
-    box-shadow: none;
-    margin-top: 60px;
-}
-//part 3 table
-.custab{
-  border: 1px solid #ccc;
-
-  padding: 5px;
-  margin: 5% 0;
-  box-shadow: 3px 3px 2px #ccc;
-
-  transition: 0.5s;
-}
-
-.custab:hover{
-  box-shadow: 3px 3px 0px transparent;
-  transition: 0.5s;
-}
+ 
