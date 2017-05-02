@@ -19,21 +19,27 @@
  @import "font-awesome";
 
 
- 
 
+  body {
+    padding-top: 70px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+   }
   .welcome{
     background-image: #eceff1;
   }
 
  .navbar{
    background-color: #233140;
+
  }
  .jumbotron {
    background-image:url('/images/horse.jpg');
    background-repeat: no-repeat;
    background-size: cover;
    padding-bottom: 200px;
-
+   margin-top: -20px;
+   color: white;
  }
 
  .title {
@@ -41,7 +47,7 @@
    text-align: center;
    margin-top: 200px;
    margin-bottom: 80px;
-   margin-left: 475px;
+   
 
  }
 
@@ -114,17 +120,14 @@
 }
 
 //---------Footer---------
-footer {
+ footer {
+   height: 100px;
     color: white;
 }
 
-footer .space {
-    margin-top: 5em;
-
-}
 
 footer .footer-below {
-    padding: 25px 0;
+     padding: 15px 0;
     background-color: #233140;
 }
 
