@@ -32,7 +32,11 @@
   <div class="carousel-inner" role="listbox">
     <div class="item active">
 
-      <%= link_to image_tag("haomaiyi.png", :alt => "Slide1"), {:class => "img-responsive", :alt => "Responsive image"} %>
+      <!-- <%= link_to image_tag("haomaiyi.png", :alt => "Slide1"), {:class => "img-responsive", :alt => "Responsive image"} %> -->
+      <%= link_to 'http://www.haomaiyi.com' do %>
+        <%= image_tag('/images/haomaiyi.png') %>
+      <% end %>
+
 
       <div class="carousel-caption">
         <a href="http://www.haomaiyi.com" class="btn btn-lg btn-danger">进入公司主页</a>
@@ -41,7 +45,7 @@
 
     <div class="item">
 
-      <%= link_to image_tag("hpe.png", :alt => "Slide2"), {:class => "img-responsive", :alt => "Responsive image"} %>
+      <%= link_to image_tag("hpe2.png", :alt => "Slide2"), {:class => "img-responsive", :alt => "Responsive image"} %>
 
       <div class="carousel-caption">
         <a href="https://www.hpe.com" class="btn btn-lg btn-danger">进入公司主页</a>
